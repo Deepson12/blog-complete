@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+
+<section class="m-upload"> 
+    <form action="{% url 'upload' %}" method="post">
+        {% csrf_token %}
+        <div class="form-inner">
+        <label for="Title">Title:</label>
+        <input type="text" name="title" placeholder="Enter the title" class="title-in" value="{{Title}}">
+        {% if error1 %}
+        <p class="error">Title is missing</p>
+        {% endif %}
+        </div>
+        <div class="form-inner">
+        <label for="Content">Content:</label>
+        <textarea name="content" id="" placeholder="Enter the content" value="{{Content}}"></textarea>
+        {% if error2 %}
+        <p class="error">Content is missing</p>
+        {% endif %}
+        </div>
+        <div class="form-inner">
+            <label for="Author">Author:</label>
+            <input type="text" class="title-in" value="{{request.GET.username}}" readonly="readonly" name="author">
+        </div>
+
+        <input type="submit" class="submit">
+    </form>
+</section>
+{% include 'footer.html' %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="login-m">
+        <div class="login-bx">
+            <div class="title">
+                    Epithet-404
+            </div>
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+            <input type="text" class="input-txt" placeholder="Username" name="Username" value="{{Username}}">
+            {% if error1 %}
+            <p class="error">Username is missing</p>
+            {% endif %}
+            
+            <input type="text" class="input-txt" placeholder="Password" name="Password" value="{{Password}}">
+            {% if error2 %}
+            <p class="error">Password is missing</p>
+            {% endif %}
+            <input type="submit" class="input-btn">
+            {% if error3 %}
+            <p class="error">Invalid Username or Password. Try again</p>
+            {% endif %}
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% include "header.html" %}
+
+<section class="m-body">
+
+    {% for n in news_data %}
+    <div class="m-body-inner">
+        <div class="m-article">
+            <div class="titles">
+                <h1 class="heading">{{n.title}}</h1>
+                <p>{{n.date}} by {{n.author}}</p>
+            </div>
+            <div class="text-article">{{n.content}}</div>
+        </div>
+    </div>
+{% endfor %}
+</section>
+
+{% include "footer.html" %}

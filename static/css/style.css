@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #ceffd3;
+}
+
+nav {
+  width: 100%;
+  background-color: #e2ccff;
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 28px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #333;
+}
+nav .navbar-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+nav .navbar-main h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.5rem;
+  color: #333;
+}
+nav .navbar-main p {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+nav .navbar-main p .design-bx:nth-child(1) {
+  background-color: #ceffd3;
+}
+nav .navbar-main p .design-bx:nth-child(2) {
+  background-color: #f8e179;
+}
+nav .navbar-main ul {
+  display: flex;
+  gap: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+nav .navbar-main ul li a {
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav .navbar-main:nth-child(1) {
+  border-bottom: 1px solid #333;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.m-body {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.m-body .m-body-inner {
+  border: 1px solid #333;
+  width: 80%;
+  height: 100%;
+  background-color: #e2ccff;
+  box-shadow: 0px 0px 28px 2px rgba(0, 0, 0, 0.2);
+  padding: 5rem 7rem;
+}
+.m-body .m-body-inner .m-article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.m-body .m-body-inner .m-article .titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid #333;
+}
+.m-body .m-body-inner .m-article .titles p {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+.m-body .m-body-inner .m-article .titles h1 {
+  font-size: 2.5rem;
+  font-family: "Merriweather", serif;
+  color: #333;
+  text-align: center;
+}
+.m-body .m-body-inner .m-article .titles h1 .title-design:nth-child(1) {
+  background-color: #fefefe;
+}
+.m-body .m-body-inner .m-article .titles h1 .title-design:nth-child(2) {
+  background-color: #ceffd3;
+}
+.m-body .m-body-inner .m-article .text-article {
+  width: 100%;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  padding: 10px;
+  box-shadow: 10px 10px 0px -2px rgb(0, 0, 0);
+  border: 1px solid #333;
+}
+
+.title-design {
+  padding: 2px;
+  box-shadow: 10px 10px 0px -2px rgb(0, 0, 0);
+  border: 1px solid #333;
+}
+
+.m-upload {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.m-upload form {
+  width: 100%;
+  background-color: #e2ccff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 5rem;
+  color: #333;
+  box-shadow: 0px 0px 28px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #333;
+}
+.m-upload form .form-inner label {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+}
+.m-upload form .form-inner .title-in {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: none;
+}
+.m-upload form .form-inner textarea {
+  padding: 1rem 1rem;
+  width: 100%;
+  height: 30rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: none;
+}
+.m-upload form .submit {
+  width: 7rem;
+  height: 3rem;
+  background-color: #f8e179;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #333;
+  cursor: pointer;
+  box-shadow: 10px 10px 0px -2px rgb(0, 0, 0);
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.error {
+  font-family: "Poppins", sans-serif;
+  color: darkred;
+}/*# sourceMappingURL=style.css.map */
