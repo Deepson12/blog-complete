@@ -74,6 +74,7 @@ def logout_view(request):
     logout(request)
     return redirect('/')
 
+@login_required(login_url='login')
 def upload_req(request):
     if request.method == "POST":
         Title = request.POST.get('title')
